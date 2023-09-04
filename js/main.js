@@ -31,3 +31,7 @@ toggleTheme = () => {
     }
     updateTheme();
 }
+
+window.onload = () => {
+    updateTheme();
+}

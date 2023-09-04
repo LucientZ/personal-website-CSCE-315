@@ -4,42 +4,45 @@
 <head>
     <title>TEST</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <script src="./js/main.js"></script>
-    <script src="./js/header.js"></script>
-    <link id="main-css" rel="stylesheet" href="./css/sunshine.css">
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/header.js"></script>
+    <script>
+        updateTheme();
+    </script>
+    <link id="theme" rel="stylesheet" href="./css/sunshine.css">
 </head>
 
 <body>
     <div class="header">
         <nav class="main-nav">
             <div class="main-nav-btn">
-                <a href="index.html">
-                    <button class="nav-btn">Home</button>
+                <a href="./index.html">
+                    <button type="button" class="nav-btn">Home</button>
                 </a>
             </div>
             <div class="main-nav-btn">
-                <a href="">
-                    <button class="nav-btn">Home</button>
+                <a href="./technical.html">
+                    <button type="button" class="nav-btn">Technical Portfolio</button>
                 </a>
             </div>
             <div class="main-nav-btn">
-                <a href="">
-                    <button class="nav-btn">Home</button>
+                <a href="./qualifications.html">
+                    <button type="button" class="nav-btn">Qualifications</button>
                 </a>
             </div>
             <div class="main-nav-btn">
-                <a href="">
-                    <button class="nav-btn">Home</button>
+                <a href="./service.html">
+                    <button type="button" class="nav-btn">Service</button>
                 </a>
             </div>
             <div class="main-nav-btn">
-                <a href="">
-                    <button class="nav-btn">Home</button>
+                <a href="./ai.html">
+                    <button type="button" class="nav-btn">AI</button>
                 </a>
             </div>
         </nav>
     </div>
-    <button onclick="toggleTheme()">Toggle Theme</button>
+    <button type="button" onclick="toggleTheme()">Toggle Theme</button>
 </body>
 
 </html>
