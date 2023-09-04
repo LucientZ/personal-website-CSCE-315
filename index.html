@@ -4,24 +4,42 @@
 <head>
     <title>TEST</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/header.js"></script>
+    <link id="theme" rel="stylesheet" href="./css/sunshine.css">
 </head>
 
-<body style="background-color: aqua;">
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-            <td align="center">
-                <h3>
-                    <font color="#990000">HOWDY!!</font>
-                </h3>
-            </td>
-        </tr>
-        <tr>
-            <td align="center">
-                <font color="#990000"><br><br>:P</font>
-            </td>
-        </tr>
-    </table>
-
+<body>
+    <div class="header">
+        <nav class="main-nav">
+            <div class="main-nav-btn">
+                <a href="./index.html">
+                    <button type="button" class="nav-btn">Home</button>
+                </a>
+            </div>
+            <div class="main-nav-btn">
+                <a href="./technical.html">
+                    <button type="button" class="nav-btn">Technical Portfolio</button>
+                </a>
+            </div>
+            <div class="main-nav-btn">
+                <a href="./qualifications.html">
+                    <button type="button" class="nav-btn">Qualifications</button>
+                </a>
+            </div>
+            <div class="main-nav-btn">
+                <a href="./service.html">
+                    <button type="button" class="nav-btn">Service</button>
+                </a>
+            </div>
+            <div class="main-nav-btn">
+                <a href="./ai.html">
+                    <button type="button" class="nav-btn">AI</button>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <button type="button" onclick="toggleTheme()">Toggle Theme</button>
 </body>
 
 </html>

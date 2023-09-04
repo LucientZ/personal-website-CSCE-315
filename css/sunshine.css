@@ -1,0 +1,7 @@
+body {
+    background-color: #ffc686;
+}
+
+main-nav {
+    flex-direction: row;
+}
