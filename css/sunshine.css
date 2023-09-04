@@ -1,7 +1,23 @@
 body {
     background-color: #ffc686;
+    margin: 0 0 0 0;
 }
 
-main-nav {
-    flex-direction: row;
+header {
+    width: 100%;
+    margin-bottom: 2rem;
 }
+
+.main-nav {
+    background: linear-gradient(to left, #eea849, #ff5d6b);
+    display: flex;
+    flex-direction: row;
+    padding: 0 2vw 0 2vw;
+    align-items: center;
+    margin: 0 0 0 0;
+    height: 100px;
+    z-index: 2;
+    position: relative;
+}
+
+
