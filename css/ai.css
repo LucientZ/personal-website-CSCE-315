@@ -1,0 +1,111 @@
+.content {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.ai-p {
+    font-size: 1.5rem;
+    animation: slideIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.ai-image {
+    width: 200px;
+    height: auto;
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* New styles for cool shapes */
+.shapes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    border-radius: 50%;
+    animation: scale 2s alternate infinite, colorChange 5s linear infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #ff5733;
+    }
+
+    25% {
+        background-color: #33ff57;
+    }
+
+    50% {
+        background-color: #5733ff;
+    }
+
+    75% {
+        background-color: #ff33b3;
+    }
+
+    100% {
+        background-color: #b333ff;
+    }
+}

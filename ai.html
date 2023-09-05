@@ -10,39 +10,66 @@
         updateTheme();
     </script>
     <link id="theme" rel="stylesheet" href="./css/sunshine.css">
+    <link id="theme" rel="stylesheet" href="./css/ai.css">
 </head>
 
 <body>
-    <div class="header">
+    <header>
         <nav class="main-nav">
-            <div class="main-nav-btn">
+            <div class="nav-btn-container">
                 <a href="./index.html">
                     <button type="button" class="nav-btn">Home</button>
                 </a>
             </div>
-            <div class="main-nav-btn">
+            <div class="nav-btn-container">
                 <a href="./technical.html">
                     <button type="button" class="nav-btn">Technical Portfolio</button>
                 </a>
             </div>
-            <div class="main-nav-btn">
+            <div class="nav-btn-container">
                 <a href="./qualifications.html">
                     <button type="button" class="nav-btn">Qualifications</button>
                 </a>
             </div>
-            <div class="main-nav-btn">
+            <div class="nav-btn-container">
                 <a href="./service.html">
                     <button type="button" class="nav-btn">Service</button>
                 </a>
             </div>
-            <div class="main-nav-btn">
+            <div class="nav-btn-container">
                 <a href="./ai.html">
                     <button type="button" class="nav-btn">AI</button>
                 </a>
             </div>
         </nav>
-    </div>
+    </header>
     <button type="button" onclick="toggleTheme()">Toggle Theme</button>
+    <p>Originally, this page was supposed to demonstrate the horrors of AI and why you shouldn't trust it. However, </p>
+    <div class="content">
+        <p class="ai-p">Created with the prompt: "Create a really cool html page that describes what you are along with
+            some css
+            animation" and "Can you also add some cool shapes at the bottom that are different colors and have their own
+            animations"</p>
+        <div class="container">
+            <h1>Welcome to ChatGPT</h1>
+            <img src="ai.png" alt="AI Icon" class="ai-image">
+            <p class="ai-p">ChatGPT is an advanced language model AI designed to assist and answer your questions.</p>
+
+            <h2>What are Language Models?</h2>
+            <p class="ai-p">Language models are a type of artificial intelligence (AI) model that are specifically
+                designed to
+                understand and generate human language text. They are a fundamental component of many natural language
+                processing (NLP) tasks and applications.</p>
+            <!-- You can continue to add more information about language models as needed. -->
+
+            <!-- Cool shapes with animations -->
+            <div class="shapes">
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
