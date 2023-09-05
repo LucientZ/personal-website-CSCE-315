@@ -15,7 +15,7 @@
     height: 100vh;
 }
 
-h1 {
+.content>h1 {
     font-size: 3rem;
     animation: fadeIn 2s ease-in-out;
 }
