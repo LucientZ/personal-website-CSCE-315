@@ -1,8 +1,8 @@
 /**
  * Modifies main-css theme to link to css stored in localStorage item "CSShref"
- * If 
+ * If CSShref doesn't exist, defaults to "./css/sunshine.css"
  */
-updateTheme = () => {
+const updateTheme = () => {
     const theme = document.getElementById("theme")
     const href = localStorage.getItem("CSShref");
     if (href) {
@@ -17,7 +17,7 @@ updateTheme = () => {
 /**
  * Toggles theme stored in localStorage item "CSShref" and updates document to have said theme
  */
-toggleTheme = () => {
+const toggleTheme = () => {
     const href = localStorage.getItem("CSShref");
     switch (href) {
         case "./css/sunshine.css":

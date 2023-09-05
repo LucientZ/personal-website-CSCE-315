@@ -1,10 +1,10 @@
 :root {
-    --header-left-color: #fff8aa;
-    --header-right-color: #ffa16b;
+    --header-left-color: #ed9a56;
+    --header-right-color: #fff291;
     --primary-highlight-color: #969ec3;
     --primary-bg-color: #53b0eb;
     --secondary-bg-color: #abcdef;
-    --tertiary-bg-color: #3b3b3b;
+    --tertiary-bg-color: #b2c0ff;
     --highlight-color: #0066f6;
     --primary-contrast-color: #038da5;
     --secondary-contrast-color: #81f00a;
@@ -24,7 +24,6 @@ body {
 
 header {
     width: 100%;
-    margin-bottom: 2rem;
 }
 
 .main-nav {
@@ -104,6 +103,16 @@ header {
 
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
@@ -203,13 +212,41 @@ footer {
  * ==============
  */
 
-.project-card-container{
+.project-card-container {
     padding-top: 4rem;
     padding-bottom: 4rem;
+    color: white;
+    background-color: var(--tertiary-bg-color);
 }
 
 .project-card-container>div {
-    background-color: var(--primary-contrast-color);
-    width: 35vh;
-    height: 25vw;
+    background-color: #038da5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: transform 0.5s;
+    width: 37.5vmin;
+    height: 52.5vmin;
+    padding: 1rem;
+    box-shadow: 1.5rem 1.5rem #3b3b3b44;
+    animation: fadeIn 1s;
+}
+
+.project-card-container>div>img {
+    max-width: 70%;
+    object-fit: scale-down;
+}
+
+.project-card-container>div:hover {
+    transform: translateY(-1rem);
+    transition: all 0.5s;
+    box-shadow: 2rem 3rem #3b3b3b44;
+    cursor: pointer;
+}
+
+.project-card-selected {
+    background-color: #21a4bb !important;
+    transform: translateY(-1rem);
+    box-shadow: 2rem 3rem #3b3b3b44 !important;
 }
