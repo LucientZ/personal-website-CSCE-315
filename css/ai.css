@@ -109,3 +109,34 @@
         background-color: #b333ff;
     }
 }
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+}
+
+.project p {
+    font-size: 1.2rem;
+}
+
+.project a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}

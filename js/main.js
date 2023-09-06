@@ -32,6 +32,6 @@ const toggleTheme = () => {
     updateTheme();
 }
 
-window.onload = () => {
+window.addEventListener("load", () => {
     updateTheme();
-}
+});

@@ -7,9 +7,6 @@
     <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/header.js"></script>
     <script type="text/javascript" src="./js/portfolioCards.js"></script>
-    <script>
-        updateTheme();
-    </script>
     <link id="theme" rel="stylesheet" href="./css/sunshine.css">
 </head>
 
@@ -44,6 +41,7 @@
         </nav>
     </header>
     <div class="content">
+        <h1 class="text-center">Pick a project to view!</h1>
         <div class="project-card-container flex-row-container">
             <div id="frame-ripper-card" class="flex-item rounded" onclick="chooseProject('frame-ripper')">
                 <h1 class="text-center">YouTube Frame Ripper</h2>
@@ -61,8 +59,17 @@
                         src="https://shpe.engr.ucr.edu/sites/default/files/styles/form_preview/public/SHPE_logo_IconOnly_FullColor-RGB_0.png?itok=_YzN6NAC">
             </div>
         </div>
-        <h1 id="project-title">Discord PyBot</h1>
-        <p id="project-description"></p>
+        <div class="project-info">
+            <h1 id="project-title">Project Title</h1>
+            <p id="project-description">This is where the project description and github link will go. If you are seeing
+                this, that means that either you are on the HTML only version of this page or you have javascript
+                disabled for this page.</p>
+            <h1>Links</h1>
+            <ul>
+                <li>GitHub Repo: <a id="project-github-link" href="">{github-link}</a></li>
+                <li>Project Showcase: <a id="project-github-link" href="">{showcase-link}</a></li>
+            </ul>
+        </div>
     </div>
     <button type="button" onclick="toggleTheme()">Toggle Theme</button>
     <footer>
