@@ -4,13 +4,6 @@
 <head>
     <title>AI Page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <script type="text/javascript" src="./js/main.js"></script>
-    <script type="text/javascript" src="./js/header.js"></script>
-    <script>
-        updateTheme();
-    </script>
-    <link id="theme" rel="stylesheet" href="./css/sunshine.css">
-    <link id="theme" rel="stylesheet" href="./css/ai.css">
 </head>
 
 <body>
@@ -40,6 +33,9 @@
                 <a href="./ai.html">
                     <button type="button" class="nav-btn">AI</button>
                 </a>
+            </div>
+            <div class="nav-btn-container">
+                <button type="button" onclick="toggleTheme()" class="nav-btn">Change Style</button>
             </div>
         </nav>
     </header>
@@ -78,7 +74,80 @@
                 <div class="shape"></div>
             </div>
         </div>
+
     </div>
+    <div class="flex-row-container">
+        <div class="info-card">
+            <h1>Pushing AI to its limits</h1>
+            <div>
+                <p>Although what the AI generated was cool, it's pretty clear that there are some elements that are a
+                    little odd. For example, the three circles at the bottom of its content overflow a little bit
+                    because the AI didn't think to add any padding. Also, the animation applied to the AI Icon is doing
+                    a very simple animation of simply spinning 360 degrees. A lot of these design concepts appear to be
+                    simplistic because they're likely questions that people have asked on the internet that were given
+                    simple answers.
+                </p>
+                <p>Despite the AI making some simple animations, I'm curious how far it can go. So I gave it the
+                    following prompt: "With just CSS and HTML, create a professional Portfolio for yourself. Add a list
+                    of projects with github links to each project. Format the information in a professional manner that
+                    still gives some personality towards you"
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <header>
+            <h1>John Doe</h1>
+            <h2>Web Developer</h2>
+        </header>
+
+        <div class="container">
+            <section class="project">
+                <h3>Project 1: Personal Website</h3>
+                <p>A personal website to showcase my portfolio and skills. Built with HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/yourusername/project1" target="_blank">GitHub</a>
+            </section>
+
+            <section class="project">
+                <h3>Project 2: Blogging Platform</h3>
+                <p>An interactive blogging platform with user authentication. Developed using Node.js, Express, and
+                    MongoDB.</p>
+                <a href="https://github.com/yourusername/project2" target="_blank">GitHub</a>
+            </section>
+
+            <!-- Add more projects as needed -->
+
+        </div>
+
+        <footer>
+            &copy; 2023 John Doe - Portfolio
+        </footer>
+    </div>
+    <div class="flex-row-container">
+        <div class="info-card">
+            <h1>Results</h1>
+            <div>
+                <p>The second result is about what I was expecting originally. The text is white on a white background,
+                    meaning it's pracitcally unreadable. What is interesting even though I said "you", it created a fake
+                    person called "John Doe" to act as. I think the AI misunderstood that I was trying to create my own
+                    website and it created it's own character to stand in as me. In the end, I think this more serves as
+                    a tool for inspiration than a replacement for a web developer. This I am very glad about.</p>
+                <p>In the end, this was a fun little experiment. Despite the AI not creating exactly what I had in my
+                    head and there being some odd UI design choices, I feel like what it made was pretty decent.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h1>Contact Me or See What I'm Doing</h1>
+        <ul>
+            <li>GitHub: <a href="https://github.com/LucientZ">https://github.com/LucientZ</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/rcookie">https://www.linkedin.com/in/rcookie</a></li>
+            <li>YouTube: <a
+                    href="https://www.youtube.com/channel/UCNseWGI28HPm_i9bYmi4i3g">https://www.youtube.com/channel/UCNseWGI28HPm_i9bYmi4i3g</a>
+            </li>
+            <li>Email: koblenzpoisiden@gmail.com</li>
+        </ul>
+    </footer>
 </body>
 
 </html>

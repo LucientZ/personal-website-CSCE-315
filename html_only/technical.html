@@ -4,13 +4,6 @@
 <head>
     <title>Technical Portfolio</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <script type="text/javascript" src="./js/main.js"></script>
-    <script type="text/javascript" src="./js/header.js"></script>
-    <script type="text/javascript" src="./js/portfolioCards.js"></script>
-    <script>
-        updateTheme();
-    </script>
-    <link id="theme" rel="stylesheet" href="./css/sunshine.css">
 </head>
 
 <body>
@@ -41,9 +34,13 @@
                     <button type="button" class="nav-btn">AI</button>
                 </a>
             </div>
+            <div class="nav-btn-container">
+                <button type="button" onclick="toggleTheme()" class="nav-btn">Change Style</button>
+            </div>
         </nav>
     </header>
     <div class="content">
+        <h1 class="text-center">Pick a project to view!</h1>
         <div class="project-card-container flex-row-container">
             <div id="frame-ripper-card" class="flex-item rounded" onclick="chooseProject('frame-ripper')">
                 <h1 class="text-center">YouTube Frame Ripper</h2>
@@ -61,12 +58,35 @@
                         src="https://shpe.engr.ucr.edu/sites/default/files/styles/form_preview/public/SHPE_logo_IconOnly_FullColor-RGB_0.png?itok=_YzN6NAC">
             </div>
         </div>
-        <h1 id="project-title">Discord PyBot</h1>
-        <p id="project-description"></p>
+        <div class="project-info">
+            <h1 id="project-title">Project Title</h1>
+            <p id="project-description">This is where the project description and github link will go. If you are seeing
+                this, that means that either you are on the HTML only version of this page or you have javascript
+                disabled for this page.</p>
+            <h1>Links</h1>
+            <ul>
+                <li>GitHub Repo: <a id="project-github-link" href="">{github-link}</a></li>
+                <li>Project Showcase: <a id="project-showcase-link" href="">{showcase-link}</a></li>
+            </ul>
+            <h1>Screenshots</h1>
+            <div class="flex-row-container">
+                <img id="image1" alt="Screenshot 1" title="Project Screenshot" class="project-screenshot" src="">
+                <img id="image2" alt="Screenshot 2" title="Project Screenshot" class="project-screenshot" src="">
+                <img id="image3" alt="Screenshot 3" title="Project Screenshot" class="project-screenshot" src="">
+            </div>
+        </div>
     </div>
     <button type="button" onclick="toggleTheme()">Toggle Theme</button>
     <footer>
-        <h1 class="text-center">Contact</h1>
+        <h1>Contact Me or See What I'm Doing</h1>
+        <ul>
+            <li>GitHub: <a href="https://github.com/LucientZ">https://github.com/LucientZ</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/rcookie">https://www.linkedin.com/in/rcookie</a></li>
+            <li>YouTube: <a
+                    href="https://www.youtube.com/channel/UCNseWGI28HPm_i9bYmi4i3g">https://www.youtube.com/channel/UCNseWGI28HPm_i9bYmi4i3g</a>
+            </li>
+            <li>Email: koblenzpoisiden@gmail.com</li>
+        </ul>
     </footer>
 </body>
 
