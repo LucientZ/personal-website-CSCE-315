@@ -73,6 +73,28 @@ header {
 
 .flex-row-container {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.flex-row-container-right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+
+.flex-col-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
@@ -147,12 +169,17 @@ header {
  */
 
 footer {
-    height: 20vh;
+    min-height: 20vh;
     background-color: #333333;
     color: white;
     padding: 0.5vh;
 }
 
+footer>ul {
+    padding: 2rem 2rem 2rem 2rem;
+    background-color: #cfcfcf;
+    color: black;
+}
 
 /*
  * ==========
@@ -267,5 +294,17 @@ footer {
     border-radius: 0.5rem;
     margin: 1rem 2rem 1rem 2rem;
     box-shadow: 2rem 3rem 0.5rem #3b3b3b44;
-    animation: float 8s cubic-bezier(.56, .3, .67, .92) infinite;
+    animation: float 8s ease-in-out infinite;
+}
+
+/*
+ * ============
+ * service.html
+ * ============
+ */
+
+.service-section {
+    margin-bottom: 10vh;
+    padding: 0 5vw 0 5vw;
+    text-align: center;
 }
